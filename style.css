@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-image:url(javier-miranda-b_fob3Te8Uk-unsplash.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+nav{
+    background-color: transparent;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.1);
+    
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav a{
+    height: 50px;
+    padding: 0 30px;
+    display: flex;
+    text-decoration: none;
+    color: whitesmoke;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+nav a:hover{
+    background-color:teal;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color:rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+    z-index: 999;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+svg{
+    fill:turquoise;
+}
+
+@media (max-width: 800px) {
+    .hideonMobile{
+        display: none;
+    }
+    .menu-button{
+        display: none;
+    }
+    
+}
+@media(max-width:400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
